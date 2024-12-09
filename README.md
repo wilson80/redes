@@ -1,17 +1,17 @@
-# **MyDrive**
+# **Instrucciones de la practica del viernes semana 1**
 
-**MyDrive** es una aplicación web que actúa como un mini Google Drive. Permite a los usuarios subir, descargar y gestionar archivos de forma segura. Incluye funciones de administración para gestionar usuarios y permisos.
+**configurar dos switch y dos pcss** 
 
 ---
 
-## **Tabla de Contenidos**
+## **comandos para los switch**
 
 1. [Descripción](#descripción)
 2. [Características](#características)
 3. [Instalación](#instalación)
 4. [Uso](#uso)
 5. [Requisitos](#requisitos)
-6. [Contribuciones](#contribuciones)
+6. [Contribuciones](#contribuciones')
 7. [Autores](#autores)
 8. [Licencia](#licencia)
 
@@ -46,6 +46,11 @@ Este proyecto está desarrollado utilizando:
 Sigue estos pasos para configurar el proyecto en tu entorno local:
 
 1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/usuario/mydrive.git
+   cd mydrive
+
+1. **Clonar**
    ```bash
    git clone https://github.com/usuario/mydrive.git
    cd mydrive
