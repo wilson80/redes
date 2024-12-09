@@ -17,17 +17,28 @@
 
 ---
 
-## **Descripción**
+## **Configuracion de switches**
 
-**MyDrive** es un proyecto diseñado para ofrecer una solución simple de almacenamiento y gestión de archivos.  
-Incluye un sistema de usuarios con roles diferenciados:  
-- **Administrador**: Gestiona usuarios y permisos.  
-- **Usuario común**: Puede subir, descargar y visualizar archivos.  
 
-Este proyecto está desarrollado utilizando:  
-- **Frontend**: PHP con el patrón MVC.  
-- **Backend**: API en Python.  
-- **Bases de datos**: MySQL para usuarios y MongoDB para archivos.
+- **iniciales**:  
+enable
+configure terminal 
+
+- **hostname**:  
+
+
+- **hostname**:  
+- **hostname**:  
+- **hostname**:  
+- **hostname**:  
+
+
+
+
+
+
+
+
 
 ---
 
@@ -45,12 +56,65 @@ Este proyecto está desarrollado utilizando:
 
 Sigue estos pasos para configurar el proyecto en tu entorno local:
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/usuario/mydrive.git
-   cd mydrive
 
-1. **Clonar**
+
+
+
+1. **enable:**
    ```bash
-   git clone https://github.com/usuario/mydrive.git
-   cd mydrive
+   enable
+
+
+1. **enable:**
+   ```bash
+   configure termianl
+   
+1. **nombrar:**
+   ```bash
+   hostname S2
+
+1. **contrasena:**
+   ```bash
+   line console 0
+   password cisco 
+   login
+   exit
+
+1. **password a EXEC privilegiado (class es la constrasena):**
+   ```bash
+   enable secret class
+
+
+1. **configurar las lineas**
+   ```bash
+   line vty 0 15
+   password cisco
+   login
+   exit
+
+1. **encriptar la contrasena**
+   ```bash
+   service password-encryption
+
+1. **banner**
+   ```bash
+   banner motd #Authorized accdessss onlyyy #
+ 
+1. **configuracion de la direccion ip (SIV (switch inteface virtual))**
+   ```bash
+   interface vlan 1  
+   ip address 192.168.1.1 255.255.255.0
+   no shutdown
+
+
+
+
+1. **comando para ver las configuraciones**
+   ```bash
+    copy running-configur startup-config
+
+
+1. **comando para ver las configuraciones**
+   ```bash
+   show running-config
+
