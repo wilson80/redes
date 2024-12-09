@@ -67,7 +67,7 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 
 1. **enable:**
    ```bash
-   configure termianl
+   configure terminal
    
 1. **nombrar:**
    ```bash
