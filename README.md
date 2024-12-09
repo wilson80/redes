@@ -1,57 +1,51 @@
-Instalación
-Sigue estos pasos para instalar el proyecto:
+# **MyDrive**
 
-Clonar el repositorio:
+**MyDrive** es una aplicación web que actúa como un mini Google Drive. Permite a los usuarios subir, descargar y gestionar archivos de forma segura. Incluye funciones de administración para gestionar usuarios y permisos.
 
-bash
-Copiar código
-git clone https://github.com/usuario/mydrive.git
-cd mydrive
-Configurar el entorno del backend (Python):
+---
 
-bash
-Copiar código
-cd Back
-python3 -m venv entornop
-source entornop/bin/activate
-pip install -r requirements.txt
-Configurar el frontend (PHP):
+## **Tabla de Contenidos**
 
-Mueve la carpeta del proyecto al directorio de Apache:
-bash
-Copiar código
-cp -r grafiles_mia /opt/lampp/htdocs/
-Asegúrate de que Apache esté corriendo.
-Configurar la base de datos:
+1. [Descripción](#descripción)
+2. [Características](#características)
+3. [Instalación](#instalación)
+4. [Uso](#uso)
+5. [Requisitos](#requisitos)
+6. [Contribuciones](#contribuciones)
+7. [Autores](#autores)
+8. [Licencia](#licencia)
 
-Configura la conexión con MySQL y MongoDB utilizando la siguiente URI:
-mongodb://pr2mia2024:1234@localhost:27017/proyecto2Mia?authSource=admin.
-Iniciar el contenedor Docker:
+---
 
-bash
-Copiar código
-docker-compose up
-Uso
-Inicia Apache desde XAMPP o usando el comando:
+## **Descripción**
 
-bash
-Copiar código
-sudo /opt/lampp/lampp start
-Accede a la aplicación en tu navegador:
-http://localhost/grafiles_mia
+**MyDrive** es un proyecto diseñado para ofrecer una solución simple de almacenamiento y gestión de archivos.  
+Incluye un sistema de usuarios con roles diferenciados:  
+- **Administrador**: Gestiona usuarios y permisos.  
+- **Usuario común**: Puede subir, descargar y visualizar archivos.  
 
-Utiliza las credenciales predeterminadas para ingresar:
+Este proyecto está desarrollado utilizando:  
+- **Frontend**: PHP con el patrón MVC.  
+- **Backend**: API en Python.  
+- **Bases de datos**: MySQL para usuarios y MongoDB para archivos.
 
-Administrador:
-Usuario: admin
-Contraseña: admin123
-Usuario común:
-Usuario: usuario
-Contraseña: usuario123
-Requisitos
-Sistema operativo: Ubuntu (se recomienda la extensión "Windows List").
-PHP: 8.3.11 o superior.
-Python: 3.8+ con entorno virtual configurado.
-Docker: Instalado y configurado.
-Base de datos: MySQL y MongoDB.
-Servidor web: Apache (XAMPP).
+---
+
+## **Características**
+
+- Gestión de usuarios y permisos (Administrador).  
+- Subida y descarga de archivos.  
+- Integración con Docker para despliegue fácil.  
+- Autenticación segura mediante credenciales.  
+- Visualización organizada de archivos por categorías.  
+
+---
+
+## **Instalación**
+
+Sigue estos pasos para configurar el proyecto en tu entorno local:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/usuario/mydrive.git
+   cd mydrive
